@@ -1,0 +1,17 @@
+$primary-color: #00d1b2;
+$color2: #433F45;
+$color3: #c6c6c6;
+body,h1,h2,h3,h4,h5,h6,ul,li {
+    margin:0;
+    padding:0;
+    color: $color2;
+    font-family: 'Open Sans', sans-serif;
+
+}
+@keyframes shake {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Elsie:900|Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <script src="https://kit.fontawesome.com/ffcbae704d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <h1>Ami Nakano</h1>
+        <ul class="navbar">
+            <li><a href="#home" data-scroll>Home</a></li>
+            <li><a href="#skills" data-scroll>Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="home" class="top">
+            <h1>Hi, I'm Ami!</h1>
+            <h4></i>Front-end Developer</h4>
+
+            <div class="about">
+                <p class="about__me">
+                    I moved to the Netherlands from Japan and did an intensive coding bootcamp in Amsterdam, which was a
+                    significant event on my personal and professional life. I became very interested in design
+                    when I was a secretary and involved in marketing materials at international organisations in Japan.
+                    That’s why front-end coding is my favourite thing!
+                </p>
+                <img class="about__portrait" src="./asset/photo.jpeg">
+            </div>
+        </div>
+        <div id="skills" class="skills padding-5">
+            <h2 class="title">Skills & Tech Stack <i class="fas fa-code"></i></h2>
+            <ul class="skills__box">
+                <li>
+                    <i class="fab fa-js-square" style="color:yellow"></i>
+                </li>
+                <li>
+                    <i class="fab fa-vuejs" style="color: #4fc08d"></i>
+                </li>
+                <li>
+                    <i class="fab fa-react" style="color:#61dafb"></i>
+                </li>
+                <li>
+                    <i class="fab fa-node" style="color:#94d82d"></i>
+                </li>
+                <li>
+                    <i class="fab fa-html5" style="color:orange"></i>
+                </li>
+                <li>
+                    <i class="fab fa-css3-alt" style="color: #4285F4"></i>
+                </li>
+                <li>
+                    <i class="fab fa-sass" style="color:#bf4080"></i>
+                </li>
+            </ul>
+            <ul class="skills__other">
+                <li>TypeScript</li>
+                <li>Git</li>
+                <li>Axios</li>
+                <li>Heroku</li>
+                <li>Web Design</li>
+                <li>Japanese Translation</li>
+                <li>Administlation</li>
+            </ul>
+        </div>
+        <div id="work" class="work padding-5">
+            <h2 class="title">My projects</h2>
+            <ul class="work__items">
+                <li class="item">
+                    <a href="https://aminakano.github.io/nysl-project/html/index.html" target="_blank"><img
+                            src="./asset/NYSL_web.png" alt=""></a>
+                    <h3>Soccer League</h3>
+                    <p>A static multi-paged website with HTML & CSS</p>
+                </li>
+                <li class="item">
+                    <a href="https://t-g-i-f.herokuapp.com/"><img src="./asset/TGIF.png" alt="" target="_blank"></a>
+                    <h3>US Government Congress Tracking</h3>
+                    <p>A dynamic website using fetch API with HTML, CSS + Bootstrap & JavaScript</p>
+                </li>
+                <li class="item">
+                    <a href="https://ami-nyslmobile.firebaseapp.com/" target="_blank"><img src="./asset/NYSL_mob.png"
+                            alt=""></a>
+                    <h3>Soccer League Mobile</h3>
+                    <p>A mobile optimised Single Page Application with HTML, CSS, JavaScript + Vue.js and syncronous
+                        chat using Firebase</p>
+                </li>
+                <li class="item">
+                    <a href="https://trivia-quiz-vue.herokuapp.com/" target="_blank"><img src="./asset/quiz.png"
+                            alt=""></a>
+                    <h3>Trivia Quiz</h3>
+                    <p>A fully responsive Single Page Application with TypeScript, Vue CLI, CSS preprocessor (SCSS) and
+                        Axios</p>
+                </li>
+            </ul>
+        </div>
+        <div class="certifications padding-5">
+            <h2 class="title">Certifications</h2>
+            <ul class="certifications__items">
+                <li><img src="./asset/Ubiqum.jpg" alt="">
+                    <h4>Full-stack 'MERN' Development</h4>
+                </li>
+                <li><img src="./asset/webdesign.png" alt="">
+                    <h4>Modern Web Design</h4>
+                </li>
+            </ul>
+
+
+        </div>
+        <div id="contact" class="contact padding-5">
+            <h2 class="title">Contact</h2>
+            <p>Get in touch! I am always looking forward to hearing from you :)</p>
+            <ul class="contact__medialinks">
+                <li><a href="https://github.com/aminakano" target="_blank"><i
+                            class="fab fa-github shake shake-slow"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/aminakano/" target="_blank"><i
+                            class="fab fa-linkedin-in shake shake-slow"></i></a></li>
+                <li><a href="https://twitter.com/amithecoder" target="_blank"><i
+                            class="fab fa-twitter shake shake-slow"></i></a></li>
+            </ul>
+        </div>
+
+
+    </main>
+
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
