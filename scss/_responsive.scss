@@ -1,0 +1,49 @@
+@include media-sm {
+    main {
+
+    }
+}
+
+@include media-md {
+    main {
+        .top {
+            padding: 10vh 0 10vh;
+
+            .about {
+
+                &__me {
+                    width: 50%;
+                }
+            }
+        }
+        .skills {
+            &__box {
+                width: 60%;
+                padding: 0 20%;
+            }
+            &__other {
+                padding-top: 3%;
+                li {
+                    font-size: 1.3rem;
+                    padding: 2%;
+                }
+            }
+        }
+        .work {
+            &__items {
+                .item {
+                    width: 50%;
+                    img {
+                        width: 70%;
+                        height:10rem;
+                        margin: 0 15%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-lg {
+
+}

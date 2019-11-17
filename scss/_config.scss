@@ -8,10 +8,28 @@ body,h1,h2,h3,h4,h5,h6,ul,li {
     font-family: 'Open Sans', sans-serif;
 
 }
-@keyframes shake {
-    0% {transform: translate(0px, 0px) rotateZ(0deg)}
-    25% {transform: translate(2px, 2px) rotateZ(1deg)}
-    50% {transform: translate(0px, 2px) rotateZ(0deg)}
-    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
-    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+
+@mixin transition-ease {
+    transition: all 0.3s ease-in-out;
+}
+@mixin media-sm {
+    @media screen and (max-width: 767px){
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) and (max-width:1023px){
+        @content;
+    }
+}
+@mixin media-lg {
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
+@mixin media-xl {
+    @media screen and (min-width: 1440 px){
+        @content;
+    }
 }

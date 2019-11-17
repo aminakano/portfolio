@@ -1,5 +1,6 @@
 @import "config";
 
+
 header {
   height: 7vh;
   width: 100%;
@@ -64,6 +65,7 @@ main {
     .about {
       display: flex;
       justify-content: center;
+      align-items: center;
       padding: 3rem 0;
       &__me {
         width: 40%;
@@ -120,10 +122,11 @@ main {
     }
   }
   .work {
-    // height: 50vh;
+
     &__items {
       display: flex;
       justify-content: space-around;
+      flex-wrap: wrap;
       .item {
         list-style: none;
         width: 25%;
@@ -199,7 +202,7 @@ main {
 footer {
   background: lightgray;
 }
-
+@import "responsive";
 
 
 
