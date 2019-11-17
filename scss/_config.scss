@@ -12,6 +12,15 @@ body,h1,h2,h3,h4,h5,h6,ul,li {
 @mixin transition-ease {
     transition: all 0.3s ease-in-out;
 }
+
+@function set-text-color($color){
+    @if(lightness($color)>40%){
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
 @mixin media-sm {
     @media screen and (max-width: 767px){
         @content;
