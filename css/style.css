@@ -7,17 +7,17 @@ body, h1, h2, h3, h4, h5, h6, ul, li {
 .menu-btn {
   position: absolute;
   z-index: 1;
-  right: 1rem;
-  top: 1rem;
+  right: 1.5rem;
+  top: 1.5rem;
   height: 20px;
-  width: 28px;
+  width: 30px;
   cursor: pointer;
   transition: all 0.3s ease-in-out; }
   .menu-btn__burger {
     position: absolute;
     right: 0;
     top: 0.5rem;
-    width: 28px;
+    width: 30px;
     height: 3px;
     background: #433F45;
     transition: all 0.3s ease-in-out; }
@@ -25,7 +25,7 @@ body, h1, h2, h3, h4, h5, h6, ul, li {
       content: '';
       position: absolute;
       top: -8px;
-      width: 28px;
+      width: 30px;
       height: 3px;
       background-color: #433F45;
       transition: all 0.3s ease-in-out; }
@@ -33,7 +33,7 @@ body, h1, h2, h3, h4, h5, h6, ul, li {
       content: '';
       position: absolute;
       top: 8px;
-      width: 20px;
+      width: 25px;
       height: 3px;
       background-color: #433F45;
       transition: all 0.3s ease-in-out; }
@@ -43,7 +43,7 @@ body, h1, h2, h3, h4, h5, h6, ul, li {
       .menu-btn__burger.open::before {
         transform: rotate(45deg) translate(5px, 8px); }
       .menu-btn__burger.open::after {
-        width: 28px;
+        width: 30px;
         transform: rotate(-45deg) translate(3px, -7px); }
 
 .nav {
@@ -85,7 +85,7 @@ body, h1, h2, h3, h4, h5, h6, ul, li {
       font-weight: 300;
       transition: all 0.3s ease-in-out; }
       .nav .menu-nav__link:hover {
-        color: #c6c6c6; }
+        color: white; }
 
 .menu-nav__item:nth-child(1) {
   transition-delay: 0.25s; }
@@ -216,7 +216,8 @@ main .work__items {
       font-size: .9rem; }
 
 main .certifications {
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 20%; }
   main .certifications__items {
     display: flex;
     justify-content: center; }
@@ -231,8 +232,7 @@ main .certifications {
         text-align: center; }
 
 main .contact {
-  height: 50vh;
-  border-bottom: 3px solid #00d1b2; }
+  height: 50vh; }
   main .contact p {
     text-align: center;
     font-size: 1.5rem; }
@@ -246,27 +246,39 @@ main .contact {
       color: #433F45; }
 
 footer {
-  background: lightgray; }
+  background: url(../asset/greenpolygon.jpg);
+  background-size: cover;
+  height: 30vh; }
+
+@media screen and (max-width: 767px) {
+  main .top .about__me {
+    font-size: 1rem; }
+  main .skills {
+    height: 35vh; } }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   main .top {
-    padding: 10vh 0 10vh; }
+    padding: 12vh 0 10vh; }
     main .top .about__me {
       width: 50%; }
-  main .skills__box {
-    width: 60%;
-    padding: 0 20%; }
-  main .skills__other {
-    padding-top: 3%; }
-    main .skills__other li {
-      font-size: 1.3rem;
-      padding: 2%; }
+  main .skills {
+    height: 40vh; }
+    main .skills__box {
+      width: 60%;
+      padding: 0 20%; }
+    main .skills__other {
+      padding-top: 3%; }
+      main .skills__other li {
+        font-size: 1.3rem;
+        padding: 2%; }
   main .work__items .item {
     width: 50%; }
     main .work__items .item img {
       width: 70%;
       height: 10rem;
-      margin: 0 15%; } }
+      margin: 0 15%; }
+  main .contact {
+    height: 35vh; } }
 
 @media screen and (min-width: 1024px) {
   .menu-btn {

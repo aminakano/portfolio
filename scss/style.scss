@@ -159,6 +159,7 @@ main {
   }
   .certifications {
     padding-top: 0;
+    padding-bottom: 20%;
     &__items {
       display: flex;
       justify-content: center;
@@ -183,7 +184,7 @@ main {
       text-align: center;
       font-size: 1.5rem;
     }
-    border-bottom: 3px solid $primary-color;
+
     &__medialinks {
       list-style: none;
       display: flex;
@@ -200,7 +201,9 @@ main {
 }
 
 footer {
-  background: lightgray;
+  background: url(../asset/greenpolygon.jpg);
+  background-size: cover;
+  height: 30vh;
 }
 @import "responsive";
 

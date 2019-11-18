@@ -1,13 +1,22 @@
 @include media-sm {
     main {
-
+        .top {
+            .about {
+                &__me {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .skills {
+            height: 35vh;
+        }
     }
 }
 
 @include media-md {
     main {
         .top {
-            padding: 10vh 0 10vh;
+            padding: 12vh 0 10vh;
 
             .about {
 
@@ -17,6 +26,7 @@
             }
         }
         .skills {
+            height: 40vh;
             &__box {
                 width: 60%;
                 padding: 0 20%;
@@ -41,8 +51,12 @@
                 }
             }
         }
+        .contact {
+            height: 35vh;
+        }
     }
 }
+
 
 @include media-lg {
     .menu-btn {

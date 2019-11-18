@@ -3,10 +3,10 @@
 .menu-btn {
     position: absolute;
     z-index: 1;
-    right: 1rem;
-    top: 1rem;
+    right: 1.5rem;
+    top: 1.5rem;
     height: 20px;
-    width: 28px;
+    width: 30px;
     cursor: pointer;
     @include transition-ease;
 
@@ -14,7 +14,7 @@
         position: absolute;
         right: 0;
         top: 0.5rem;
-        width: 28px;
+        width: 30px;
         height: 3px;
         background: $color2;
         @include transition-ease;
@@ -23,7 +23,7 @@
             content: '';
             position: absolute;
             top: -8px;
-            width: 28px;
+            width: 30px;
             height: 3px;
             background-color: $color2;
             @include transition-ease;
@@ -32,7 +32,7 @@
             content: '';
             position: absolute;
             top: 8px;
-            width: 20px;
+            width: 25px;
             height: 3px;
             background-color: $color2;
             @include transition-ease;
@@ -46,7 +46,7 @@
                 transform: rotate(45deg) translate(5px, 8px);
             }
             &::after {
-                width: 28px;
+                width: 30px;
                 transform: rotate(-45deg) translate(3px, -7px);
             }
         }
@@ -103,7 +103,7 @@
             @include transition-ease;
 
             &:hover {
-                color: $color3;
+                color: white;
             }
         }
     }
