@@ -1,5 +1,5 @@
 @import "config";
-@import "menu";
+
 
 header {
   height: 7vh;
@@ -15,6 +15,9 @@ header {
     padding-left: 2%;
     white-space: nowrap;
   }
+  .menu-btn {
+        visibility: hidden;
+    }
   .navbar {
     display: flex;
     justify-content: space-around;
@@ -44,7 +47,6 @@ header {
  }
 
 main {
-  // height: 80vh;
   
   .top {
     display: flex;
@@ -84,8 +86,6 @@ main {
 
   .skills {
     height: 50vh;
-
-    
 
     &__box {
       display: flex;
@@ -205,6 +205,7 @@ footer {
   background-size: cover;
   height: 30vh;
 }
+@import "menu";
 @import "responsive";
 
 

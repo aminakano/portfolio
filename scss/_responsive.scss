@@ -14,6 +14,26 @@
 }
 
 @include media-md {
+    .nav {
+        visibility: visible;
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &__link {
+                font-size: 1rem;
+                padding: 1rem 0 0;
+            }
+          }
+        }
     main {
         .top {
             padding: 12vh 0 10vh;
